@@ -1,0 +1,42 @@
+
+<div class="page-heading">
+    <div class="page-title">
+        <div class="row">
+            <h3 class="text-center">Welcome to About Page</h3>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <form name="frmContent" id="frmContent" novalidate ng-submit="frmContent.$valid && submit()">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">{{pgname}}</h4>
+                        
+                    </div>
+
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12" ng-show="dataFrm.contentRows" ng-cloak>
+                                    <fieldset class="form-group">
+                                        <div ckeditor="options"  ng-model="dataFrm.banner_text" ready="onReady()" ></div> <!--required-->
+                                    </fieldset> 
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="submit" name="submit" value="save" ng-click="submit()" class="btn btn-primary" ng-disabled="frmContent.$invalid">
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

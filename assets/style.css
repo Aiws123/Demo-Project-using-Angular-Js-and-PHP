@@ -1,0 +1,21 @@
+.login_form input[type=text],input[type=password]{
+  border: 1px solid greenyellow;
+  margin: 10px;
+  padding: 10px;
+}
+
+.login_form input[type=submit] {
+    background-color: greenyellow;
+    border: 1px solid greenyellow;
+    color: #000;
+    padding: 10px 25px;
+    margin-left: 10px;
+    border-radius: 7px;
+}
+
+.navigation li a.active {
+  text-decoration: underline;
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+}
